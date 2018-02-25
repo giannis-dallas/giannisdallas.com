@@ -23,8 +23,8 @@ const PortfolioPage = ({data}) => (
       <SinglePortfolio imgsizes={data.betterparents.edges[0].node.childImageSharp.sizes} name="BetterParents.gr" type="WordPress Development" />
       <SinglePortfolio imgsizes={data.gklegal.edges[0].node.childImageSharp.sizes} name="GKLegal.gr" type="WordPress Development" />
     </div>
-    <p>{JSON.stringify(data.poliergo.edges[0].node)}</p>
-    <p>{JSON.stringify(data.gklegal.edges)}</p>
+    <p>{/*JSON.stringify(data.poliergo.edges[0].node)}</p>
+    <p>{JSON.stringify(data.gklegal.edges)*/}</p>
     <Link to="/">Go back to the homepage</Link>
   </div>
 )
