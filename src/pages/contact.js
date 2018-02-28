@@ -30,7 +30,6 @@ const ContactPage = ({data}) => (
             </p>
             <h2>Hire me online</h2>
             <p><a href="https://www.upwork.com/o/profiles/users/_~0168d059ac7bbd584a/">Find me on Upwork</a></p>
-            <p>{test2}</p>
             <p
                 dangerouslySetInnerHTML={{ __html: test2 }}
             />

@@ -23,17 +23,23 @@ h1{
         display: inline-block;
         margin: 0;
     }
+
+    ul{
+        margin: 0
+    }
 }
 
 .Content{
 
     .hero-image{
-        position: relative;
-        overflow: hidden;
 
+        .gatsby-image-wrapper{
+            max-height: 60vh;
+        }
+        
         img{
             top: 0;
-            object-position: top center;
+            object-position: top center !important;
         }
     }
     .Content-inner{
@@ -41,7 +47,7 @@ h1{
         box-shadow: 2px 2px 16px rgba(0,0,0,0.22);
         max-width: 960px;
         background: #fff;
-        margin: -150px auto 0 auto;
+        margin: -5vh auto 0 auto;
         padding: 2rem 1.45rem;
     }
 
