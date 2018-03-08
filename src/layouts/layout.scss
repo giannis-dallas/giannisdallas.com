@@ -1,5 +1,14 @@
+$primary-color:#00897B;
+$secondary-color: #9E9E9E;
+$secondary-color-darken: darken( $secondary-color, 15% );
+$secondary-color-lighten: lighten( $secondary-color, 32% );
+
+$alt-top-color:#202020;
+$alt-mediun-color:#c0c0c0;
+$alt-bottom-color: #484848;
+
 a {
-    color: #00897B
+    color: $primary-color
 } 
 
 /*h1,h2,h3,h4,h5,h6{
@@ -10,6 +19,27 @@ a {
 
 h1{
     margin-top:20px;
+}
+
+.primary-button{
+    display: inline-block;
+    padding: 0.6em 1em;
+    margin-right: 15px;
+    border: 1px solid $primary-color;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover{
+        background: $primary-color;
+        color: #fff;
+    }
+}
+
+.divider{
+    width: 80%;
+    margin: 20px auto;
+    height: 1px;
+    background: $alt-mediun-color;
 }
 .header{
 
@@ -30,6 +60,30 @@ h1{
 }
 
 .Content{
+    position: relative;
+
+    .background-svg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+
+        svg{
+            height: 100%;
+            width: 100%;
+        }
+
+        .line1{
+            fill: $alt-top-color
+        }
+        .line2{
+            fill: $alt-mediun-color
+        }
+        .line3{
+            fill: $alt-bottom-color
+        }
+    }
 
     .hero-image{
 
@@ -42,13 +96,17 @@ h1{
             object-position: top center !important;
         }
     }
+
     .Content-inner{
+
         position: relative;
-        box-shadow: 2px 2px 16px rgba(0,0,0,0.22);
+        box-shadow: 0 6px 10px rgba(0,0,0,0.22);
         max-width: 960px;
         background: #fff;
         margin: -5vh auto 0 auto;
         padding: 2rem 1.45rem;
+        border-top: 3px solid $secondary-color;
+
     }
 
 }
@@ -66,88 +124,8 @@ h1{
             margin: 0 auto
         }
 
-        li a:hover{
+        a:hover{
             box-shadow: none !important;
         }
     }
 }
-
-.gatsby-image-wrapper{
-    width: 100%
-}
-
-.know-well-container,
-.learn-now-container{
-    display: inline-grid;
-    width: 50%;
-    text-align: center;
-}
-
-.know-well{
-    display: grid;
-    grid-template-columns: repeat(5,auto);
-    grid-column-gap: 10px;
-    justify-content: space-evenly;
-
-    >img{
-        max-width: 50px;
-        width: 100%
-    }
-}
-
-.learn-now{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-column-gap: 10px;
-    justify-content: space-evenly;
-
-    >img{
-        max-width: 50px;
-        width: 100%
-    }
-}
-
-.portfolio-masonry{
-    position: relative;
-    display: grid;
-    grid-template-columns:  repeat(5,auto);
-    grid-column-gap: 20px;
-    grid-row-gap:  20px;
-
-    .portfolio-masonry-item{
-        position: relative;
-        display: inline-block;
-        background: #fff;
-        box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
-        text-align: center;
-
-        .image-holder{
-            position: relative;
-            padding-bottom: 66%;
-            overflow: hidden;
-
-            .gatsby-image-outer-wrapper{
-                position: absolute !important;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;                
-            }
-          
-            &:before{
-                content:'';
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                background: rgba(0,0,0,0.3);
-                display: block;
-            }
-
-        }
-    }
-
-
-}
-
-

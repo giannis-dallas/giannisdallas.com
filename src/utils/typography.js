@@ -5,7 +5,7 @@ DeYoung.baseLineHeight = 1.65;
 DeYoung.scaleRatio = 2;
 DeYoung.overrideThemeStyles = ({ rhythm }, options) => ({
     'h1,h2,h3': {
-      marginBottom: rhythm(2),
+      marginBottom: rhythm(1.625),
       marginTop: rhythm(0),
     }
   });

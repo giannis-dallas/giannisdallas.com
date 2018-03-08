@@ -1,0 +1,47 @@
+
+.portfolio-masonry{
+    position: relative;
+    display: grid;
+    grid-template-columns:  repeat(2,50%);
+    grid-column-gap: 20px;
+    grid-row-gap:  20px;
+
+    .portfolio-masonry-item{
+        position: relative;
+        display: inline-block;
+        background: #fff;
+        box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
+        text-align: center;
+
+        .gatsby-image-wrapper{
+            width: 100%
+        }
+
+        .image-holder{
+            position: relative;
+            padding-bottom: 66%;
+            overflow: hidden;
+
+            .gatsby-image-outer-wrapper{
+                position: absolute !important;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;                
+            }
+          
+            &:before{
+                content:'';
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0,0,0,0.3);
+                display: block;
+            }
+
+        }
+    }
+
+
+}
