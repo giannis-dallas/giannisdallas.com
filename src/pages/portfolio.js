@@ -16,18 +16,22 @@ const SinglePortfolio = props =>
 
 const PortfolioPage = ({data}) => (
   <div>
+    
+    <div className="hero-image">    
+      <Img sizes={data.hero.sizes} />
+    </div>
+
+  <div className="Content-outer">
     <div className="background-svg">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080">
+      <svg version="1.2" id="Layer_1" preserveAspectRatio="none" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
         <polyline className="line1" points="-0.5,0.5 960,1080.5 -0.5,1080.5 "/>
         <polygon className="line2" points="-0.5,555.5 1920.5,0.5 1920.5,1080.5 -0.5,1080.5 "/>
         <polygon className="line3" points="-0.5,823.5 1920.5,268.5 1920.5,1080.5 -0.5,1080.5 "/>
       </svg>
-  </div>
-    <div className="hero-image">    
-      <Img sizes={data.hero.sizes} />
     </div>
-    <div className="Content-inner">    
+
+  <div className="Content-inner">
+   
       <h1>Welcome to my Portfolio</h1>
       <p>Take a look at my personal projects</p>    
       <div className="portfolio-masonry">
@@ -38,6 +42,7 @@ const PortfolioPage = ({data}) => (
         <SinglePortfolio imgsizes={data.gklegal.edges[0].node.childImageSharp.sizes} name="GKLegal.gr" type="WordPress Development" />
       </div>
       <Link to="/">Go back to the homepage</Link>
+    </div>
     </div>
   </div>
 )

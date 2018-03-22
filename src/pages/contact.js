@@ -18,8 +18,7 @@ const ContactPage = ({data}) => (
 
     <div>
         <div className="background-svg">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080">
+        <svg version="1.2" id="Layer_1" preserveAspectRatio="none" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
                 <polyline className="line1" points="-0.5,0.5 960,1080.5 -0.5,1080.5 "/>
                 <polygon className="line2" points="-0.5,555.5 1920.5,0.5 1920.5,1080.5 -0.5,1080.5 "/>
                 <polygon className="line3" points="-0.5,823.5 1920.5,268.5 1920.5,1080.5 -0.5,1080.5 "/>
@@ -32,7 +31,7 @@ const ContactPage = ({data}) => (
             <h1>ContactPage</h1>
 
             <h2>Direct Contact</h2>
-            <p>For anything you need or want to ask send me a message at <strong><a href='mailto:giannisdallas81@gmail.com'>
+            <p>For anything you need or want to ask, send me a message at <strong><a href='mailto:giannisdallas81@gmail.com'>
                 giannisdallas81@gmail.com
             </a></strong>
             </p>

@@ -16,26 +16,29 @@ import graphql from '../images/logos/graphql-150.jpg'
 const IndexPage = ({data}) => (
   <div>
 
-    <div className="background-svg">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080">
-        <polyline className="line1" points="-0.5,0.5 960,1080.5 -0.5,1080.5 "/>
-        <polygon className="line2" points="-0.5,555.5 1920.5,0.5 1920.5,1080.5 -0.5,1080.5 "/>
-        <polygon className="line3" points="-0.5,823.5 1920.5,268.5 1920.5,1080.5 -0.5,1080.5 "/>
-      </svg>
-  </div>
-
   <div className="hero-image">    
       <Img sizes={data.hero.sizes} />
   </div>
 
+  <div className="Content-outer">
+    <div className="background-svg">
+      <svg version="1.2" id="Layer_1" preserveAspectRatio="none" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+          <polyline className="line1" points="-0.5,0.5 960,1080.5 -0.5,1080.5 "/>
+          <polygon className="line2" points="-0.5,555.5 1920.5,0.5 1920.5,1080.5 -0.5,1080.5 "/>
+          <polygon className="line3" points="-0.5,823.5 1920.5,268.5 1920.5,1080.5 -0.5,1080.5 "/>
+        </svg>
+    </div>
   <div className="Content-inner">
+
     <h1>I am Giannis Dallas, Web Developer</h1>
-    <p>Welcome to my personal site.</p>
-    <p>I am a web developer with extensive WordPress experience. I design, develop and manage sites using WordPress, Bootstrap or even plain HTML/CSS/JS.</p>
-    <p>Currently, I work for <Link to="https://mosaicdataservices.com" target="_blank">Mosaic Data Services</Link> firm as WordPress developer.   </p>  
-    <p><Link className="primary-button" to="/portfolio/">Go to portfolio</Link>
-    <Link className="primary-button" to="/portfolio/">Get in touch with me</Link></p>
+    <h2>Welcome to my personal site.</h2>
+    <p>Hello,<br/>
+    I am a web developer with extensive WordPress experience. I design, develop and manage sites using WordPress, Bootstrap or even plain HTML/CSS/JS.</p>
+    <p>In less than a year, I learned WordPress, PHP, MySQL database handling and of course HTML CSS and JavaScript.</p>
+    <h4>My next goal is to learn ReactJS and create static sites and JavaScript apps</h4>
+    <p>I can edit the PHP files to modify a WordPress theme beyond its capabilities. I can create child themes, write plugins add new functions, new shortcodes, custom queries etc.</p>
+    <p>Currently, I work for <Link to="https://mosaicdataservices.com" target="_blank">Mosaic Data Services</Link> firm as WordPress developer.My duties are building, managing and troubleshooting US or foreign WordPress sites mostly using ThemeForest themes (Avada, Salient, Be, Bridge etc).
+I also work as Freelancer in Greece</p>
     <div className="divider"></div>
     <div className="skills">
       <div className="know-well-container">
@@ -58,6 +61,10 @@ const IndexPage = ({data}) => (
         </div>
       </div>
     </div>
+    <div className="divider"></div>
+    <p><Link className="primary-button" to="/portfolio/">Go to portfolio</Link>
+    <Link className="primary-button" to="/portfolio/">Get in touch with me</Link></p>
+  </div>
   </div>
 
   </div>
