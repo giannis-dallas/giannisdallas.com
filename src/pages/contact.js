@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{Component} from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import upwork from'../images/logos/upwork-logo-150px.jpg'
+
+import './contact.scss'
 
 let test2 = `
 <script type='text/javascript'>
@@ -14,8 +17,37 @@ let test2 = `
 </script><div id='pph-hireme'></div>
 `
 
-const ContactPage = ({data}) => (
+//const ContactPage = ({data}) => (
+class ContactPage extends Component {
+    
+    constructor(props) {
+        super(props);
+      }    
 
+    loadHireMe(d, s) {
+        var useSSL = 'https:' == document.location.protocol;
+        var js,
+          where = d.getElementsByTagName(s)[0],
+          js = d.createElement(s);
+        js.src =
+          (useSSL ? 'https:' : 'http:') +
+          '//www.peopleperhour.com/hire/1002307300/1213788.js?width=300&height=135&orientation=vertical&theme=light&rnd=' +
+          parseInt(Math.random() * 10000, 10);
+        try {
+          where.parentNode.insertBefore(js, where);
+        } catch (e) {
+          if (typeof console !== 'undefined' && console.log && e.stack) {
+            console.log(e.stack);
+          }
+        }
+      }
+    
+      componentDidMount() {
+        this.loadHireMe(document, 'script');
+      }
+    
+      render(){
+          return(
     <div>
         <div className="background-svg">
         <svg version="1.2" id="Layer_1" preserveAspectRatio="none" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +57,7 @@ const ContactPage = ({data}) => (
             </svg>
         </div>
         <div className="hero-image">    
-            <Img sizes={data.hero.sizes} />
+            <Img sizes={this.props.data.hero.sizes} />
         </div>
         <div className="Content-inner">    
             <h1>ContactPage</h1>
@@ -36,15 +68,19 @@ const ContactPage = ({data}) => (
             </a></strong>
             </p>
             <h2>Hire me online</h2>
-            <p><a href="https://www.upwork.com/o/profiles/users/_~0168d059ac7bbd584a/">Find me on Upwork</a></p>
+            <p className="upwork">
+                <a href="https://www.upwork.com/o/profiles/users/_~0168d059ac7bbd584a/">
+                    <img src={upwork} /> Find me on Upwork
+                </a></p>
             <p
                 dangerouslySetInnerHTML={{ __html: test2 }}
             />
             <Link to="/">Back to my homepage</Link>
         </div>
     </div>
-
-)
+          )
+        };
+    }
 
 export default ContactPage
 export const HeroImageQuery = graphql`

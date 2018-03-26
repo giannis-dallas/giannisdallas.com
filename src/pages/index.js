@@ -37,7 +37,7 @@ const IndexPage = ({data}) => (
     <p>In less than a year, I learned WordPress, PHP, MySQL database handling and of course HTML CSS and JavaScript.</p>
     <h4>My next goal is to learn ReactJS and create static sites and JavaScript apps</h4>
     <p>I can edit the PHP files to modify a WordPress theme beyond its capabilities. I can create child themes, write plugins add new functions, new shortcodes, custom queries etc.</p>
-    <p>Currently, I work for <Link to="https://mosaicdataservices.com" target="_blank">Mosaic Data Services</Link> firm as WordPress developer.My duties are building, managing and troubleshooting US or foreign WordPress sites mostly using ThemeForest themes (Avada, Salient, Be, Bridge etc).
+    <p>Currently, I work for <Link to="https://mosaicdataservices.com" target="_blank">Mosaic Data Services</Link> firm as WordPress developer.My duties are building, managing and troubleshooting US or foreign WordPress sites.
 I also work as Freelancer in Greece</p>
     <div className="divider"></div>
     <div className="skills">
