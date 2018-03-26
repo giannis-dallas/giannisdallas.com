@@ -64,7 +64,7 @@ class ContactPage extends Component {
 
             <h2>Direct Contact</h2>
             <p>For anything you need or want to ask, send me a message at <strong><a href='mailto:giannisdallas81@gmail.com'>
-                giannisdallas81@gmail.com
+                giannisdallas81 @ gmail.com
             </a></strong>
             </p>
             <h2>Hire me online</h2>
