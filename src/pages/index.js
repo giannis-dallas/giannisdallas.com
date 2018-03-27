@@ -63,7 +63,7 @@ I also work as Freelancer in Greece</p>
     </div>
     <div className="divider"></div>
     <p><Link className="primary-button" to="/portfolio/">Go to portfolio</Link>
-    <Link className="primary-button" to="/portfolio/">Get in touch with me</Link></p>
+    <Link className="primary-button" to="/contact/">Get in touch with me</Link></p>
   </div>
   </div>
 
