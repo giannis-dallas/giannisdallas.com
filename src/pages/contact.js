@@ -72,7 +72,7 @@ class ContactPage extends Component {
                 <a href="https://www.upwork.com/o/profiles/users/_~0168d059ac7bbd584a/">
                     <img src={upwork} /> Find me on Upwork
                 </a></p>
-            <div id='pph-hireme'>
+            <div id='pph-hireme'></div>
             <Link to="/">Back to my homepage</Link>
         </div>
     </div>
