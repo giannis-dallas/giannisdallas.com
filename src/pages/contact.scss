@@ -2,6 +2,10 @@
     a{
         display: inline-block;
         line-height: 150px;
+
+        &:hover{
+            box-shadow: none;
+        }
     }
 
     img{

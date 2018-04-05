@@ -73,7 +73,7 @@ class ContactPage extends Component {
                     <img src={upwork} /> Find me on Upwork
                 </a></p>
             <div id='pph-hireme'></div>
-            <Link to="/">Back to my homepage</Link>
+            <p><Link className="primary-button" to="/">Back to Homepage</Link></p>
         </div>
     </div>
           )
